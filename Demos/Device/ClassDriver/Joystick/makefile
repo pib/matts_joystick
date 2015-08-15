@@ -23,6 +23,9 @@ LUFA_PATH    = ../../../../LUFA
 CC_FLAGS     = -DUSE_LUFA_CONFIG_HEADER -IConfig/
 LD_FLAGS     =
 
+AVRDUDE_PORT = /dev/cu.usbmodem1451
+AVRDUDE_PROGRAMMER = avr109
+
 # Default target
 all:
 
