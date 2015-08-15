@@ -1,0 +1,63 @@
+***************
+*** 50,58 ****
+  	 *   Max X/Y Axis values:  100
+  	 *   Min physical X/Y Axis values (used to determine resolution): -1
+  	 *   Max physical X/Y Axis values (used to determine resolution):  1
+- 	 *   Buttons: 2
+  	 */
+- 	HID_DESCRIPTOR_JOYSTICK(-100, 100, -1, 1, 2)
+  };
+  
+  /** Device descriptor structure. This descriptor, located in FLASH memory, describes the overall
+--- 50,58 ----
+  	 *   Max X/Y Axis values:  100
+  	 *   Min physical X/Y Axis values (used to determine resolution): -1
+  	 *   Max physical X/Y Axis values (used to determine resolution):  1
++ 	 *   Buttons: 8
+  	 */
++ 	HID_DESCRIPTOR_JOYSTICK(-100, 100, -1, 1, 8)
+  };
+  
+  /** Device descriptor structure. This descriptor, located in FLASH memory, describes the overall
+***************
+*** 159,167 ****
+   */
+  const USB_Descriptor_String_t PROGMEM ManufacturerString =
+  {
+- 	.Header                 = {.Size = USB_STRING_LEN(11), .Type = DTYPE_String},
+  
+- 	.UnicodeString          = L"Dean Camera"
+  };
+  
+  /** Product descriptor string. This is a Unicode string containing the product's details in human readable form,
+--- 159,167 ----
+   */
+  const USB_Descriptor_String_t PROGMEM ManufacturerString =
+  {
++ 	.Header                 = {.Size = USB_STRING_LEN(18), .Type = DTYPE_String},
+  
++ 	.UnicodeString          = L"lentinj Industries"
+  };
+  
+  /** Product descriptor string. This is a Unicode string containing the product's details in human readable form,
+***************
+*** 170,178 ****
+   */
+  const USB_Descriptor_String_t PROGMEM ProductString =
+  {
+- 	.Header                 = {.Size = USB_STRING_LEN(18), .Type = DTYPE_String},
+  
+- 	.UnicodeString          = L"LUFA Joystick Demo"
+  };
+  
+  /** This function is called by the library when in device mode, and must be overridden (see library "USB Descriptors"
+--- 170,178 ----
+   */
+  const USB_Descriptor_String_t PROGMEM ProductString =
+  {
++ 	.Header                 = {.Size = USB_STRING_LEN(28), .Type = DTYPE_String},
+  
++ 	.UnicodeString          = L"LUFA-Powered Arcade Joystick"
+  };
+  
+  /** This function is called by the library when in device mode, and must be overridden (see library "USB Descriptors"
